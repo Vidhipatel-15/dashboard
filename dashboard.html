@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Management Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-72 bg-white shadow-md p-6 hidden md:block">
+            <div class="flex items-center space-x-3">
+                <div>
+                    <h2 class="text-lg font-semibold">Vidhi</h2>
+                    <p class="text-gray-500 text-sm">vidhi@gmail.com</p>
+                </div>
+            </div>
+            <nav class="mt-6 space-y-4">
+                <a href="#" class="flex items-center space-x-2 text-gray-700 p-2 rounded-lg hover:bg-blue-100"><span>🏠</span><span>Dashboard</span></a>
+                <a href="#" class="flex items-center space-x-2 text-gray-700 p-2 rounded-lg hover:bg-blue-100"><span>📚</span><span>Subjects</span></a>
+                <a href="#" class="flex items-center space-x-2 text-gray-700 p-2 rounded-lg hover:bg-blue-100"><span>📝</span><span>Assignments</span></a>
+                <a href="#" class="flex items-center space-x-2 text-gray-700 p-2 rounded-lg hover:bg-blue-100"><span>📅</span><span>Schedule</span></a>
+                <a href="#" class="flex items-center space-x-2 text-gray-700 p-2 rounded-lg hover:bg-blue-100"><span>⚙️</span><span>Settings</span></a>
+                <a href="#" class="flex items-center space-x-2 text-red-500 p-2 rounded-lg hover:bg-red-100"><span>🚪</span><span>Logout</span></a>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col p-6">
+            <!-- Navbar -->
+            <header class="flex justify-between items-center">
+                <h1 class="text-2xl font-semibold">Hello, Vidhi</h1>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">+ Add New Task</button>
+            </header>
+            
+            <!-- Dashboard Overview -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <div class="bg-green-500 text-white p-4 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold">Hours Studied</h2>
+                    <p>📖 5 hours</p>
+                </div>
+                <div class="bg-yellow-400 text-white p-4 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold">Pending Assignments</h2>
+                    <p>📄 3 assignments</p>
+                </div>
+                <div class="bg-red-400 text-white p-4 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold">Upcoming Exams</h2>
+                    <p>📆 2 exams</p>
+                </div>
+            </section>
+            
+            <!-- Tasks and Statistics -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h2 class="text-lg font-semibold">Today's Study Plan</h2>
+                    <ul class="mt-4 space-y-2">
+                        <li class="p-2 bg-gray-100 rounded-lg">📘 Math - 2 hours</li>
+                        <li class="p-2 bg-gray-100 rounded-lg">📙 Science - 1.5 hours</li>
+                        <li class="p-2 bg-gray-100 rounded-lg">📕 History - 1 hour</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h2 class="text-lg font-semibold">Study Statistics</h2>
+                    <p class="mt-2">🕰️ 5 hours Studied Today</p>
+                    <p class="mt-2">✅ 2 Assignments Completed</p>
+                    <p class="mt-2">🎯 Goal: 6 hours/day</p>
+                </div>
+            </section>
+            
+            <!-- Progress Calendar -->
+            <section class="bg-white p-4 rounded-lg shadow-md mt-6">
+                <h2 class="text-lg font-semibold">Upcoming Deadlines</h2>
+                <ul class="mt-4 space-y-2">
+                    <li class="p-2 bg-gray-100 rounded-lg">📅 Feb 7 - Math Assignment</li>
+                    <li class="p-2 bg-gray-100 rounded-lg">📅 Feb 8 - Science Quiz</li>
+                    <li class="p-2 bg-gray-100 rounded-lg">📅 Feb 9 - History Project</li>
+                    <li class="p-2 bg-gray-100 rounded-lg">📅 Feb 10 - Literature Exam</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    
+</body>
+</html>
